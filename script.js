@@ -54,3 +54,10 @@ document.querySelector('.brand').addEventListener('click', e => {
   showSection('hero'); // muestra la sección hero y oculta las demás
   document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
 });
+// Toggle del menú móvil
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav');
+
+navToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
+});

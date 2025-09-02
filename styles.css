@@ -232,3 +232,71 @@ img {
 #info {
   display: none;
 }
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-media .mock-card {
+    height: 180px; /* más compacto */
+  }
+}
+@media (max-width: 768px) {
+  .grid.cards {
+    gap: 12px;
+  }
+  .card img {
+    height: 150px;
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* se mostrará al abrir el toggle */
+    flex-direction: column;
+    background: var(--surface);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .info-grid {
+    gap: 12px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
