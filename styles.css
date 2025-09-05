@@ -138,9 +138,10 @@ img {
 }
 .mock-card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* que se expanda bien */
 }
+
 .mock-badge {
   position: absolute;
   top: 8px;
@@ -187,8 +188,9 @@ img {
 }
 .card img { 
   width: 100%; 
-  height: 180px; 
-  object-fit: cover; 
+  height: auto;   /* ahora se adapta al tamaño real */
+  object-fit: contain; /* para ver la foto entera */
+  background: #000; /* opcional: fondo negro para que no quede raro si sobra */
 }
 .card-body { 
   padding: 12px; 
